@@ -1,0 +1,152 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --header-width: 30vw;
+    --main-font-color: rgb(62, 62, 62);
+}
+
+@font-face {
+    font-family: Norse-bold;
+    src: url("../fonts/Norse-Bold.otf") format("opentype");
+    color: white;
+}
+
+#header{
+    position: absolute;
+    background-image: url('/src/assets/images/coolmntn.jpg');
+    background-repeat: no-repeat;
+    width: var(--header-width);
+    height: 100vh;
+    background-position: 42% 50%;
+}
+
+#title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 45%;
+
+    background-color: #2e2e2e78;
+    font-family: Norse-bold;
+    color: white;
+    font-size: 90px;
+    height: 180px;
+}
+
+#logo-img{
+    width: 20%;
+}
+
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(237, 237, 237);
+    color: var(--main-font-color);
+}
+
+.title{
+    font-size: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+#sub-title{
+    margin-top: 2rem;
+    margin-bottom: 2.3rem;
+}
+
+
+
+#sign-in{
+    position: relative;
+    height: 100vh;
+    left: var(--header-width);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100vw - var(--header-width));
+}
+
+#sign-in-form{
+    width: 100%;
+    background-color: white;
+    margin-top: 2rem;
+    padding: 4% 8%;
+    box-shadow: 0px 8px 8px 0px #CCCCCC;
+}
+
+#form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#form-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+}
+
+input{
+    height: 35px;
+    margin-top: .5rem;
+    border-radius: 5px;
+    border: 2px solid #E5E7EB;
+}
+
+input:focus{
+    border: 2px solid #85a9f0;
+    outline: none;
+    box-shadow: 3px 3px 3px 0px #CCCCCC;
+}
+
+.invalid{
+    border: 2px solid red;
+    color: red;
+}
+
+.invalid:focus{
+    border: 2px solid red;
+}
+
+#error-msg{
+    color: red;
+}
+
+#submit{
+    margin-left: 8%;
+    width: 300px;
+    height: 50px;
+    background-color: #f10b76;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 45px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #CCCCCC;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #f5368f;
+}
+
+

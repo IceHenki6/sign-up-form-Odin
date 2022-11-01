@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/assets/css/reset.css">
+    <link rel="stylesheet" href="src/assets/css/styles.css"> 
+    <title>Sign in page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div id="title-container">
+        <img id="logo-img" src="src/assets/images/odin-lined.png" alt="the oding project logo">
+        <h1 id="main-title">Odin</h1>
+      </div>
+    </header>
+    <main id="main">
+      <section id="sign-in">
+        <h1 class="title">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h1>
+        <h2 class="title">Sign up now to get started.</h2>
+  
+        <h3 id="sub-title" class="title">You <span>know</span> you want to.</h3>
+  
+        <section id="sign-in-form">
+          <h2 id="form-title">Let's do this!</h2>
+  
+          <form id="form" action="">
+  
+            <label for="name">
+              First Name
+              <input name="name" id="name" type="text" minlength="3" maxlength="100" required>
+            </label> 
+            <label for="lastname">
+              Last Name
+              <input name="lastname" id="lastname" type="text" minlength="3" maxlength="100" required>
+            </label>
+  
+            <label for="email">
+              Email
+              <input name="email" id="email" type="email" minlength="6" maxlength="100" required>
+            </label>
+            <label for="phone-number">
+              Phone Number
+              <input name="phone-number" id="phone-number" type="tel" minlength="8" maxlength="20">
+            </label>
+  
+            <label for="password">
+              Password
+              <input name="password" id="password" type="password" minlength="8" maxlength="50" required>
+            </label>
+            <label for="confirm-password">
+              Confirm your password
+              <input name="confirm-password" id="confirm-password" type="password" minlength="8" maxlength="50" required>
+            </label>
+          </form>
+          <span id="error-msg"></span>
+        </section>
+        <button id="submit" type="submit" form="form">Create Account</button>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="src/assets/js/app.js"></script>
+  </body>
+</html>
