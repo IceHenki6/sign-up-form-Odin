@@ -164,9 +164,7 @@ input:focus{
     text-decoration: underline;
 }
 
-#log-in a:hover{
-    cursor:pointer;
-}
+
 
 @media only screen and (max-width: 600px){
     #header{
