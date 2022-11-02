@@ -5,6 +5,7 @@
 :root{
     --header-width: 30vw;
     --main-font-color: rgb(62, 62, 62);
+    --padding: 8%;
 }
 
 @font-face {
@@ -15,7 +16,7 @@
 
 #header{
     position: absolute;
-    background-image: url('/src/assets/images/coolmntn.jpg');
+    background-image: url('../images/coolmntn.jpg');
     background-repeat: no-repeat;
     width: var(--header-width);
     height: 100vh;
@@ -49,8 +50,8 @@ body{
 
 .title{
     font-size: 1.5rem;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
     line-height: 1.6rem;
     font-weight: 700;
 }
@@ -60,7 +61,9 @@ body{
     margin-bottom: 2.3rem;
 }
 
-
+#sub-title span{
+    font-style: italic;
+}
 
 #sign-in{
     position: relative;
@@ -76,7 +79,7 @@ body{
     width: 100%;
     background-color: white;
     margin-top: 2rem;
-    padding: 4% 8%;
+    padding: 4% var(--padding);
     box-shadow: 0px 8px 8px 0px #CCCCCC;
 }
 
@@ -149,4 +152,61 @@ input:focus{
     background-color: #f5368f;
 }
 
+#log-in{
+    font-size: 18px;
+    margin-top: 1.3rem;
+    margin-left: 8%;
+    font-weight: 700;
+}
+
+#log-in a{
+    color: #f5368f;
+    text-decoration: underline;
+}
+
+#log-in a:hover{
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        position: relative;
+        margin-top: 0;
+        width: 100vw;
+        height: 50vh;
+        background-position: 45% 65%;
+    }
+
+    #title-container{
+        margin-top: 0%;
+    }
+
+    #sign-in{
+        left: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .title{
+        font-size: 20px;
+        margin-top: 1.8rem;
+        line-height: 1.8rem;
+    }
+
+    #sub-title{
+        margin-bottom: 0;
+    }
+
+    #form{
+        flex-direction: column;
+    }
+
+    label{
+        width: 100%;
+    }
+
+    #sign-in-form{
+        padding: var(--padding);
+    }
+}
 
